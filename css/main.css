@@ -1,0 +1,119 @@
+:root {
+  /* Primary */
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  /* Accent */
+  --Blue: hsl(248, 32%, 49%);
+  /* Neutral */
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246deg 25% 89%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: var(--Red);
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .learn {
+    text-align: center;
+  }
+}
+.container {
+  min-height: 100vh;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container section {
+  flex-basis: 40%;
+  min-height: 60vh;
+}
+.container .learn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .learn h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.container .learn p {
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  line-height: 1.6;
+}
+.container .price {
+}
+.container .price h4 {
+  background-color: var(--Blue);
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px #00000024;
+  margin-bottom: 20px;
+}
+.container .price span {
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+.price form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px #00000024;
+}
+.price form input:not(:last-of-type) {
+  border: 1px solid #bababa;
+}
+.price form input {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+}
+.price form input::placeholder {
+  color: black;
+  opacity: 0.7;
+  font-weight: 700;
+}
+.price form input:focus:not(:last-of-type) {
+  border: 1px solid black;
+}
+.price form input[type="submit"] {
+  background-color: var(--Green);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.price form p {
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  color: #979797;
+}
+.price form span:last-of-type {
+  color: var(--Red);
+  font-weight: 700;
+  cursor: pointer;
+}
