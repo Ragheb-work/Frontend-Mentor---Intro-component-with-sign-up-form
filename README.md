@@ -16,7 +16,7 @@
     <a href="https://github.com/Ragheb-work/Frontend-Mentor---Intro-component-with-sign-up-form/issues">Request Feature</a>
   </p>
 </div>
-<!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 
